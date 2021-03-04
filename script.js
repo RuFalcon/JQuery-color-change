@@ -2,7 +2,7 @@ $(function () {
   let style = "background-color";
 
   function hexFromRGB(r, g, b) {
-    var hex = [r.toString(16), g.toString(16), b.toString(16)];
+    const hex = [r.toString(16), g.toString(16), b.toString(16)];
     $.each(hex, function (nr, val) {
       if (val.length === 1) {
         hex[nr] = "0" + val;
@@ -16,8 +16,9 @@ $(function () {
   }
 
   function refreshSwatch() {
-    var slider = $("#slider").slider("value");
-    hex = hexFromRGB(slider, getRandomInt(255), getRandomInt(255));
+    let red = $("#slider").slider("value");
+    let randomColor = getRandomInt(255);
+    hex = hexFromRGB(red, randomColor, randomColor);
     $("#swatch").css(style, "#" + hex);
   }
 
