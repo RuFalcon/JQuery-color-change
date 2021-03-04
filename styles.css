@@ -1,0 +1,59 @@
+body{
+  padding: 16px;
+  height: 300px;
+  width: 600px;
+  margin: 40px auto;
+  border-radius: 4px;
+}
+
+fieldset {
+  height: 40px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+#slider-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+#slider {
+  float: left;
+  clear: left;
+  flex-grow: 1;
+}
+
+#swatch {
+  width: 200px;
+  height: 200px;
+  margin-top: 16px;
+  margin-left: 16px;
+  flex-shrink: 1;
+  transition: 0.3s;
+  border-radius: 4px;
+  padding: 0 8px;
+}
+
+#slider .ui-slider-range {
+  background: #ef2929;
+}
+
+#slider .ui-slider-handle {
+  border-color: #ef2929;
+}
+
+.btn {
+  padding: 6px 20px;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn-active {
+  background-color: green;
+  border: none;
+  color: white !important;
+}
